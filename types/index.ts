@@ -11,3 +11,9 @@ export interface CampProps {
   subTitle: string;
   peopleJoined: string;
 }
+
+export interface FeatureItem {
+  title: string;
+  icon: string;
+  description: string;
+}

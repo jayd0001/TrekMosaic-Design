@@ -1,6 +1,6 @@
 import { FEATURES } from "@/constants";
 import Image from "next/image";
-import React from "react";
+import { FeatureItem } from "@/types";
 
 const Features = () => {
   return (
@@ -41,12 +41,6 @@ const Features = () => {
       </div>
     </section>
   );
-};
-
-type FeatureItem = {
-  title: string;
-  icon: string;
-  description: string;
 };
 
 const FeatureItem = ({ title, icon, description }: FeatureItem) => {
