@@ -1,3 +1,5 @@
+"use client";
+
 import { NAV_LINKS } from "@/constants";
 import { link } from "fs";
 import Image from "next/image";
@@ -5,6 +7,7 @@ import Link from "next/link";
 import { Button } from ".";
 
 const Navbar = () => {
+  const handleClick = () => {};
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
@@ -25,9 +28,11 @@ const Navbar = () => {
       <div className="lg:flexCenter hidden">
         <Button
           type="button"
-          title="Login"
-          icon="/user.svg"
+          title="Github"
           variant="btn_dark_green"
+          onClick={() =>
+            window.open("https://github.com/jayd0001/TrekMosaic-Design.git")
+          }
         />
       </div>
 

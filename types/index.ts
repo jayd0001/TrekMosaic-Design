@@ -3,6 +3,8 @@ export interface ButtonProps {
   type: "button" | "submit";
   variant: string;
   icon?: string;
+  full?: boolean;
+  onClick?: () => void;
 }
 
 export interface CampProps {
@@ -16,4 +18,9 @@ export interface FeatureItem {
   title: string;
   icon: string;
   description: string;
+}
+
+export interface FooterColumnProps {
+  title: string;
+  children: React.ReactNode;
 }
